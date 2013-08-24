@@ -6,6 +6,7 @@ DOT_PATH=~/src/dot
 ln -fs $DOT_PATH/.xmonad ~/.xmonad
 
 # Setup zshrc.
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 ln -fs $DOT_PATH/.zshrc ~/.zshrc
 
 # Setup the xfce4-terminal
