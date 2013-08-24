@@ -3,7 +3,10 @@
 DOT_PATH=~/src/dot
 
 # Setup xmonad config
-rm -rf ~/.xmonad && ln -s $DOT_PATH/.xmonad ~/.xmonad
+ln -fs $DOT_PATH/.xmonad ~/.xmonad
 
 # Setup zshrc.
-rm -f ~/.zshrc && ln -s $DOT_PATH/.zshrc ~/.zshrc
+ln -fs $DOT_PATH/.zshrc ~/.zshrc
+
+# Setup the xfce4-terminal
+mkdir -p ~/.config/xfce4/terminal && ln -fs $DOT_PATH/.config/xfce4/terminal/terminalrc ~/.config/xfce4/terminal/terminalrc
